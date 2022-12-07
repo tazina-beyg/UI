@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  padding: 0;
+  margin: 0;
+  
+
+}
+/* *{
+  padding: 0;
+  margin: 0;
+} */
+.navLinks{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.bg-cover{  
+  background-size: cover;
+  background-color: white;
+  position:sticky;
+  top: 0px;
+  z-index: 2;
+ 
+
+
+}
+.mainSec{
+  background-image: url("../img/studentnotes3.jpg"); 
+  background-size: cover;
+  height: 80vh;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem;
+  position: relative;
+  filter: brightness(50%);
+}
+.mainsecContent{
+  position: absolute;
+  /* z-index: 3; */
+  top: 35%;
+  padding: 0 144px;
+
+}
+.sectionTwo{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 6rem;
+}
+.salesSubCon{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.iconDiv{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.frame{
+  height: 335px;
+  width: 250px;
+  border: 5px solid #3B82F6  ;
+}
+.salesImgBox{
+  position: relative;
+  
+}
+
+.imgWorking{
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+
+
+.imgOne{
+  background-image: url(../img/work.jpg);
+  background-size: cover;
+  /* opacity: 0.7; */
+  /* filter: brightness(60%); */
+  opacity: 0.8;
+  
+}
+.imgTwo{
+  background-image: url(../img/working2.jpg);
+  background-size: cover;
+  opacity: 0.8;
+}
+.imgThree{
+  background-image: url(../img/working3.jpg);
+  background-size: cover;
+  opacity: 0.8;
+}
+.imgFour{
+  background-image: url(../img/working4.jpg);
+  background-size: cover;
+  opacity: 0.8;
+}
+.imgFive{
+  background-image: url(../img/working5.jpg);
+  background-size: cover;
+  opacity: 0.8;
+}
+.imgSix{
+  background-image: url(../img/working6.jpg);
+   background-size: cover;
+  opacity: 0.8;
+}
+.frameTwo{
+  height: 200px;
+  width: 550px;
+  border: 1px solid #3B82F6  ;
+  background: rgb(13,20,54);
+background: linear-gradient(180deg, rgb(47, 77, 228) 0%, rgb(79, 105, 198) 30%, rgb(78, 91, 209) 50%, rgb(103, 130, 228) 70%, rgb(35, 62, 160) 100%);
+text-align: center;
+
+  
+}
+.frameTwo{
+  font-size: 30px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #3287f5;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #3287f5f1;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  display: none;
+}
+
+.cardContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.serviceContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.planContainer{
+  padding: 144px;
+}
+.imgLast{
+  width: 498px;
+}
+.lastSec{
+  display: flex;
+  flex-direction: row;
+  
+}
+.navBar{
+  margin-left: 144px;
+  z-index: 1000;
+
+}
+ .textOne{
+  font-size: 40px;
+ }
+.btnBorder{
+  font-size: 16px;
+}
+.xLogo{
+  font-size: 20px;
+}
+@media screen and (max-width:1024px) {
+  .serviceContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+
+  }
+  /* .cardContainer{
+    padding: 144px;
+  } */
+  .planContainer{
+    padding: 50px;
+  }
+  .mainsecContent{
+    padding: 0 50px;
+  }
+  .navBar{
+    margin-left: 30px;
+  
+  }
+  .textOne{
+    font-size: 48px;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+ 
+}
+@media screen and (max-width: 768px) {
+  .serviceContainer{
+    display: grid;
+    grid-template-columns: .7fr;
+    justify-content: center;
+  
+  }
+  .sectionTwo{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  .navLinks{
+    display: none;
+  }
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+  #main{
+    display: block;
+  }
+  .cardContainer{
+    display: grid;
+    grid-template-columns: .7fr;
+    justify-content: center;
+  }
+  .lastSec{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .openbtn{
+    display: block;
+  }
+  .textOne{
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .serviceContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  
+  }
+  .textOne{
+    font-size: 26px;
+  }
+  .btnSec{
+    padding: 10px 20px 10px 20px ;
+  }
+  .cardContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .frameTwo h1{
+    font-size: 25px;
+  }
+  .btnBorder{
+    padding: 10px 20px 10px 20px ;
+    font-size: 16px;
+  }
+ }
+@media screen and (max-width: 380px) {
+ .xLogo{
+  font-size: 16px;
+ }
+  .textOne{
+    font-size: 30px;
+  }
+  .btnSec{
+   padding: 15px 20px 15px 20px ;
+  }
+  
+}
